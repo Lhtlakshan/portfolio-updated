@@ -83,7 +83,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
             <div className={`w-full h-full rounded-full flex items-center justify-center overflow-hidden backdrop-blur-sm ${
               darkMode ? 'bg-gray-800/90' : 'bg-white/90'
             }`}>
-              <img src="../public/pic/thilina_updated.jpg" alt="" />
+              <img src="/portfolio-updated/pic/thilina_updated.jpg" alt="" />
             </div>
           </div>
         </motion.div>
