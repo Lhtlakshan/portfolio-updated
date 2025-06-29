@@ -100,7 +100,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
 
         <motion.h1
           variants={itemVariants}
-          className="mb-6 text-5xl font-bold leading-tight text-transparent md:text-8xl bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text"
+          className="p-6 mb-6 text-5xl font-bold leading-tight text-transparent md:text-8xl bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text"
         >
           Thilina Hewage
         </motion.h1>
