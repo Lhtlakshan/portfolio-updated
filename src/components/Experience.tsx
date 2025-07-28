@@ -14,32 +14,42 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
 
   const experiences = [
     {
-      company: "UniverSL Softwares (Pvt) Ltd",
-      position: "Trainee Software Engineer",
-      duration: "Dec 2025 - Present",
-      type: "Full-time",
-      achievements: [
-        "Developing internal applications, including an E-Commerce style appointment management system.",
-        "Actively participating in Agile practices such as daily stand-ups, sprint planning, and retrospectives.",
-        `Utilizing Git & Gerrit for version control and Jira for project management.`,
-        "Delpoying backend application on GCP."
-      ],
-      technologies: ["Java", "Spring Boot", "GCP"]
-    },
+  company: "UniverSL Softwares (Pvt) Ltd",
+  position: "Trainee Software Engineer",
+  duration: "Jan 2025 - Present",
+  type: "Full-time",
+  achievements: [
+    "Developing internal applications, including an E-Commerce style appointments management web application.",
+    "Developing REST APIs using Spring Boot and securing them with Spring Security and JWT.",
+    "Implemented unit tests using JUnit and Mockito to ensure code reliability and support test-driven development.",
+    "Deploying the Spring Boot application on Google Cloud Platform (GCP).",
+    "Actively participating in daily stand-ups, sprint planning, and retrospective meetings to align with Agile practices.",
+    "Using Bitbucket for version control and Jira for project management.",
+    "Consistently applying best coding practices and software engineering principles such as OOP.",
+    "Soft skills: Team player, Adaptability, Communication, and Analytical thinking."
+  ],
+  technologies: ["Java", "Spring Boot", "Hibernate", "MySQL", "Spring Security", "JWT", "JUnit", "Mockito", "GCP"]
+}
+,
     {
-      company: "Zebra Technologies Lanka (Pvt) Ltd",
-      position: "Software Engineer Intern",
-      duration: "Dec 2024 - June 2024",
-      type: "Internship",
-      achievements: [
-        "Implemented enhanced logging across multiple sub-projects within the internal product.",
-        "Developed and updated test cases, maintaining detailed test case documentation",
-        "Conducted system testing using Zebra tools and SDKs to verify the functionality of the application",
-        "Actively participating in Agile practices such as daily stand-ups, sprint planning, and retrospectives.",
-        `Utilizing Git & Gerrit for version control and Jira for project management.`
-      ],
-      technologies: ["C++" , "C#"]
-    }
+  company: "Zebra Technologies Lanka (Pvt) Ltd",
+  position: "Software Engineer Intern",
+  duration: "Dec 2023 – June 2024",
+  type: "Internship",
+  achievements: [
+    "Fixed internal application issues and improved essential features to enhance user-friendliness, functionality, and stability.",
+    "Successfully implemented enhanced logging across multiple sub-projects within the internal product.",
+    "Developed and updated test cases and maintained detailed test case documentation.",
+    "Conducted full system testing (manual and automated) using Zebra tools and SDKs.",
+    "Followed best coding practices and applied Software Engineering concepts like OOP.",
+    "Followed Agile development methodologies to ensure smooth project management.",
+    "Actively participated in Agile practices such as daily stand-ups, sprint planning, and retrospectives.",
+    "Used Gerrit for version control and Jira for project management."
+  ],
+  technologies: ["C#", "C++"],
+  softSkills: ["Team player", "Adaptability", "Communication", "Analytical skills"]
+}
+
   ];
 
   const containerVariants = {

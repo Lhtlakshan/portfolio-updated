@@ -132,7 +132,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
           className="flex flex-col items-center justify-center gap-6 mb-16 sm:flex-row"
         >
           <motion.a
-  href="/CV/Thilina_Hewage_ASE.pdf"
+  href="/portfolio-updated/CV/Thilina_Hewage_SE.pdf"
   download
   className="relative flex items-center gap-3 px-10 py-5 text-lg font-bold text-white transition-all duration-300 shadow-2xl group bg-gradient-to-r from-emerald-500 via-blue-500 to-purple-500 rounded-2xl hover:shadow-emerald-500/25"
   whileHover={{ scale: 1.05, y: -3 }}

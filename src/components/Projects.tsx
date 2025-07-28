@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { ExternalLink, Github, Zap, ShoppingCart, MessageSquare, Calendar } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 
 interface ProjectsProps {
   darkMode: boolean;
@@ -14,199 +14,115 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce application with user authentication, product catalog, shopping cart, and payment integration using Stripe API.",
-      icon: ShoppingCart,
-      technologies: ["Spring Boot", "Angular", "PostgreSQL", "Stripe API", "Docker"],
-      features: ["User Authentication", "Payment Processing", "Admin Dashboard", "Real-time Inventory"],
+      title: "Niwahana Hardware Shop",
+      description: "Niwahana Hardware Shop is a full-stack E-commerce web application designed to facilitate the online purchase of hardware products. This project, developed individually by me, includes essential features such as user authentication, product management, a shopping cart and order processing. The frontend is built using Angular for a dynamic and responsive user experience, while the backend is powered by Spring Boot with MySQL and Hibernate for efficient data management. The system also implements role-based access control for administrators and customers.",
+      technologies: ["Angular", "Spring Boot", "MySQL", "Hibernate"],
+      features: ["User Authentication", "Product Management", "Shopping Cart", "Order Processing"],
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Lhtlakshan/niwahana-hardware-shop-backend",
+      image: "./projects/hardwareShop.png",
       gradient: "from-emerald-500 to-blue-500",
       bgGradient: darkMode ? "from-emerald-900/20 to-blue-900/20" : "from-emerald-50 to-blue-50"
     },
     {
-      title: "Task Management System",
-      description: "Collaborative project management tool with real-time updates, task assignment, and progress tracking for teams.",
-      icon: Calendar,
-      technologies: ["React", "Node.js", "MongoDB", "Socket.io", "TypeScript"],
-      features: ["Real-time Collaboration", "Team Management", "Progress Analytics", "File Sharing"],
+      title: "Prescription Management - WeCare System",
+      description: "WeCare prescription management system is an innovative, highly reliable, and expertly developed system tailored to transform healthcare delivery. By streamlining the prescription process, it enhances accuracy, ensures compliance, and improves overall operational efficiency.",
+      technologies: ["Spring Boot", "Microservices", "MySQL", "Angular"],
+      features: ["Prescription Handling", "Role-based Access", "Data Security"],
       demoUrl: "#",
-      githubUrl: "#",
-      gradient: "from-purple-500 to-pink-500",
-      bgGradient: darkMode ? "from-purple-900/20 to-pink-900/20" : "from-purple-50 to-pink-50"
+      githubUrl: "https://github.com/Lhtlakshan/niwahana-hardware-shop-backend",
+      image: "./projects/hospital.jpg",
+      gradient: "from-purple-500 to-blue-500",
+      bgGradient: darkMode ? "from-purple-900/20 to-blue-900/20" : "from-purple-50 to-blue-50"
     },
     {
-      title: "Chat Application",
-      description: "Real-time messaging application with group chats, file sharing, and emoji reactions built with modern web technologies.",
-      icon: MessageSquare,
-      technologies: ["React", "Express.js", "Socket.io", "Redis", "JWT"],
-      features: ["Real-time Messaging", "Group Chats", "File Sharing", "Message History"],
+      title: "Sarusara agro - E commerce web application",
+      description: "Sarusara is a comprehensive full-stack web application built with the MERN stack, currently under active development as a group project. Its primary goal is to revolutionize the traditional agricultural marketplace by providing an online platform that allows farmers to sell their harvest directly to wholesalers, vegetable shop owners, and regular buyers who purchase fresh produce for their households. This platform addresses common challenges faced by farmers, such as limited market access and dependency on intermediaries, by creating a transparent and convenient marketplace where all stakeholders can connect seamlessly.",
+      technologies: ["React.js", "Express.js", "Node.js", "Mongodb", "Tailwind CSS"],
+      features: ["Counsellor Functionalities", "Meditation Modules"],
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/orgs/sarusara-agro/repositories",
+      image: "https://i0.wp.com/asombarta.com/wp-content/uploads/2025/03/paddy-1-scaled.jpg?fit=2560%2C1707&ssl=1",
+      gradient: "from-green-500 to-teal-500",
+      bgGradient: darkMode ? "from-green-900/20 to-teal-900/20" : "from-green-50 to-teal-50"
+    },
+    {
+      title: "Be Care",
+      description: "Public Health web application. The 2nd year group project at UCSC. I have done the Counsellor's and Meditation instructor's Functionalities of this project.",
+      technologies: ["HTML", "CSS", "JavaScript", "PHP"],
+      features: ["Counsellor Functionalities", "Meditation Modules"],
+      demoUrl: "#",
+      githubUrl: "https://github.com/Janod-Umayanga/bE-CARE",
+      image: "./projects/becare.jpg",
+      gradient: "from-green-500 to-teal-500",
+      bgGradient: darkMode ? "from-green-900/20 to-teal-900/20" : "from-green-50 to-teal-50"
+    },
+    {
+      title: "Weather Application",
+      description: "A real-time weather application created using Weather APIs. This is an individual software project developed by me.",
+      technologies: ["HTML", "CSS", "JavaScript", "Weather APIs"],
+      features: ["Real-time Weather", "API Integration", "Responsive Design"],
+      demoUrl: "#",
+      githubUrl: "https://github.com/Lhtlakshan/weather-app",
+      image: "./projects/weather_app.png",
       gradient: "from-cyan-500 to-blue-500",
       bgGradient: darkMode ? "from-cyan-900/20 to-blue-900/20" : "from-cyan-50 to-blue-50"
     },
     {
-      title: "Performance Monitor",
-      description: "System monitoring dashboard that tracks application performance metrics with beautiful data visualizations and alerts.",
-      icon: Zap,
-      technologies: ["Spring Boot", "React", "InfluxDB", "Grafana", "Docker"],
-      features: ["Real-time Metrics", "Custom Alerts", "Data Visualization", "API Monitoring"],
+      title: "MOS Burgers",
+      description: "MOS Burgers is a simple yet interactive Point of Sale (POS) system designed for managing fast-food restaurant orders efficiently. This project, developed individually by me, focuses on frontend functionalities, providing an intuitive user interface for selecting menu items, processing orders, and calculating totals.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      features: ["Menu Selection", "Cart Management", "Dynamic UI"],
       demoUrl: "#",
-      githubUrl: "#",
-      gradient: "from-orange-500 to-red-500",
-      bgGradient: darkMode ? "from-orange-900/20 to-red-900/20" : "from-orange-50 to-red-50"
-    }
+      githubUrl: "https://github.com/Lhtlakshan/niwahana-hardware-shop-backend",
+      image: "./projects/mosBurgers.png",
+      gradient: "from-yellow-500 to-red-500",
+      bgGradient: darkMode ? "from-yellow-900/20 to-red-900/20" : "from-yellow-50 to-red-50"
+    },
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5
-      }
-    }
-  };
-
   return (
-    <section id="projects" className={`py-20 ${
-      darkMode 
-        ? 'bg-gradient-to-br from-gray-800 via-slate-800 to-gray-800' 
-        : 'bg-gradient-to-br from-white via-blue-50 to-emerald-50'
-    }`}>
-      <div className="max-w-7xl mx-auto px-4">
+    <section id="projects" className={`py-20 ${darkMode ? 'bg-gray-900' : 'bg-gray-100'}`}>
+      <div className="px-4 mx-auto max-w-7xl">
         <motion.div
           ref={ref}
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.6 }}
         >
-          <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
-              Featured Projects
-            </h2>
-            <div className="w-32 h-1.5 bg-gradient-to-r from-emerald-500 via-blue-500 to-purple-500 mx-auto rounded-full mb-8"></div>
-            <p className={`text-xl max-w-3xl mx-auto leading-relaxed ${
-              darkMode ? 'text-gray-300' : 'text-gray-700'
-            }`}>
-              Showcasing innovative solutions built with modern technologies and best practices.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 gap-8">
+          <h2 className="pb-2 mb-12 text-4xl font-bold text-center text-transparent md:text-5xl bg-gradient-to-r from-emerald-500 to-blue-500 bg-clip-text">
+            My Projects
+          </h2>
+          <div className="grid gap-8 md:grid-cols-3">
             {projects.map((project, index) => (
               <motion.div
                 key={index}
-                variants={itemVariants}
-                className="group"
+                className="p-6 border border-gray-200 shadow-lg rounded-2xl backdrop-blur-md bg-white/80 dark:bg-gray-800/80 dark:border-gray-700"
+                whileHover={{ scale: 1.02 }}
               >
-                <motion.div
-                  className={`p-8 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 border backdrop-blur-sm h-full ${
-                    darkMode 
-                      ? 'bg-gradient-to-br from-gray-700/90 to-slate-700/90 border-gray-600/50' 
-                      : 'bg-white/80 border-white/50'
-                  }`}
-                  whileHover={{ y: -12, scale: 1.02 }}
-                >
-                  {/* Project Header */}
-                  <div className="flex items-center gap-6 mb-8">
-                    <div className={`p-5 bg-gradient-to-r ${project.gradient} rounded-2xl text-white shadow-xl`}>
-                      <project.icon className="w-10 h-10" />
-                    </div>
-                    <h3 className={`text-3xl font-bold group-hover:bg-gradient-to-r group-hover:${project.gradient} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${
-                      darkMode ? 'text-gray-100' : 'text-gray-800'
-                    }`}>
-                      {project.title}
-                    </h3>
+                <img src={project.image} alt={project.title} className="object-cover w-full mb-6 rounded-xl h-52" />
+                <h3 className="mb-2 text-2xl font-semibold text-gray-900 dark:text-gray-100">{project.title}</h3>
+                <p className="mb-4 text-gray-700 dark:text-gray-300">{project.description}</p>
+                <div className="mb-3">
+                  <strong className="block mb-1 text-gray-800 dark:text-gray-200">Technologies:</strong>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech, i) => (
+                      <span key={i} className="px-3 py-1 text-sm text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-200">
+                        {tech}
+                      </span>
+                    ))}
                   </div>
-
-                  {/* Project Description */}
-                  <p className={`leading-relaxed mb-8 text-lg ${
-                    darkMode ? 'text-gray-300' : 'text-gray-700'
-                  }`}>
-                    {project.description}
-                  </p>
-
-                  {/* Key Features */}
-                  <div className="mb-8">
-                    <h4 className={`text-xl font-bold mb-4 ${
-                      darkMode ? 'text-gray-100' : 'text-gray-800'
-                    }`}>Key Features</h4>
-                    <div className="grid grid-cols-2 gap-3">
-                      {project.features.map((feature, featureIndex) => (
-                        <div key={featureIndex} className="flex items-center gap-3">
-                          <div className={`w-2 h-2 bg-gradient-to-r ${project.gradient} rounded-full`}></div>
-                          <span className={`text-sm font-medium ${
-                            darkMode ? 'text-gray-400' : 'text-gray-600'
-                          }`}>{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Technologies */}
-                  <div className="mb-8">
-                    <h4 className={`text-xl font-bold mb-4 ${
-                      darkMode ? 'text-gray-100' : 'text-gray-800'
-                    }`}>Technologies</h4>
-                    <div className="flex flex-wrap gap-3">
-                      {project.technologies.map((tech, techIndex) => (
-                        <motion.span
-                          key={techIndex}
-                          className={`px-4 py-2 rounded-xl text-sm font-semibold border-2 transition-all duration-300 shadow-md ${
-                            darkMode 
-                              ? 'bg-gradient-to-r from-gray-600/50 to-slate-600/50 text-gray-300 border-gray-500 hover:border-emerald-400 hover:shadow-emerald-400/20'
-                              : 'bg-gradient-to-r from-white/70 to-blue-50/70 text-gray-700 border-gray-200 hover:border-emerald-300 hover:shadow-emerald-300/20'
-                          }`}
-                          whileHover={{ scale: 1.05, y: -2 }}
-                        >
-                          {tech}
-                        </motion.span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Action Buttons */}
-                  <div className={`flex gap-4 pt-6 border-t ${
-                    darkMode ? 'border-gray-600' : 'border-gray-200'
-                  }`}>
-                    <motion.a
-                      href={project.demoUrl}
-                      className={`flex items-center gap-3 px-6 py-3 bg-gradient-to-r ${project.gradient} text-white rounded-xl hover:shadow-xl transition-all duration-300 font-semibold flex-1 justify-center`}
-                      whileHover={{ scale: 1.05, y: -2 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      <ExternalLink className="w-5 h-5" />
-                      Live Demo
-                    </motion.a>
-                    <motion.a
-                      href={project.githubUrl}
-                      className={`flex items-center gap-3 px-6 py-3 border-2 rounded-xl transition-all duration-300 font-semibold ${
-                        darkMode 
-                          ? 'border-gray-600 text-gray-300 hover:border-emerald-500 hover:text-emerald-400 hover:bg-emerald-500/10'
-                          : 'border-gray-300 text-gray-700 hover:border-emerald-500 hover:text-emerald-600 hover:bg-emerald-50'
-                      }`}
-                      whileHover={{ scale: 1.05, y: -2 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      <Github className="w-5 h-5" />
-                      Source
-                    </motion.a>
-                  </div>
-                </motion.div>
+                </div>
+                <div className="flex gap-4 mt-4">
+                  <a href={project.githubUrl} className="flex items-center gap-2 text-blue-600 hover:underline dark:text-blue-400">
+                    <Github className="w-4 h-4" /> GitHub
+                  </a>
+                  {project.demoUrl !== "#" && (
+                    <a href={project.demoUrl} className="flex items-center gap-2 text-emerald-600 hover:underline dark:text-emerald-400">
+                      <ExternalLink className="w-4 h-4" /> Live Demo
+                    </a>
+                  )}
+                </div>
               </motion.div>
             ))}
           </div>

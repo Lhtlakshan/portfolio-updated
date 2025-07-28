@@ -12,50 +12,83 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
   const isInView = useInView(ref, { once: true });
 
   const skills = [
-    {
-      name: "Java",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-      color: "from-gray-300 to-blue-400",
-    },
-    {
-      name: "Spring Boot",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
-    },
-    {
-      name: "JavaScript",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  // Backend Development
+  {
+    name: "Java",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    color: "from-gray-300 to-blue-400",
+  },
+  {
+    name: "Spring Boot",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+  },
+  {
+    name: "Node.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  },
+  {
+    name: "Express.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  },
 
-    },
-    {
-      name: "MongoDB",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-    },
-    {
-      name: "MySQL",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-   },
-    {
-      name: "React",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-   },
-    {
-      name: "Express JS",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-        },
-    {
-      name: "Node.js",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-   },
-    {
-      name: "Git",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  // Frontend Development
+  {
+    name: "HTML",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  },
+  {
+    name: "CSS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  },
+  {
+    name: "JavaScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  },
+  {
+    name: "Angular",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+  },
+  {
+    name: "React.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png",
+  },
+  {
+    name: "Bootstrap",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+  },
 
-    },
-    {
-      name: "Bitbucket",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg",
-   },
-  ];
+  // Database Management
+  {
+    name: "MySQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+  },
+  {
+    name: "MongoDB",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  },
+
+  // Version Control
+  {
+    name: "Git",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  {
+    name: "GitHub",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+  },
+  {
+    name: "Bitbucket",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg",
+  },
+  {
+    name: "Gerrit",
+    icon: "https://www.svgrepo.com/show/306092/gerrit.svg",
+  }
+];
   
 
   const containerVariants = {
@@ -135,7 +168,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
                     }`}>Education</h4>
                     <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                       <span className="font-semibold">BSc in Computer Science (Graduated)</span><br />
-                      University of Colombo School of Computing (UCSC) • 2021 April - 2024 October<br />
+                      University of Colombo School of Computing (UCSC) <br />( April 2021 - October 2024 )<br />
                     </p>
                   </div>
                 </div>
