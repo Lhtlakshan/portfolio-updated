@@ -122,7 +122,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
         >
           A responsible and dedicated computer science student, with a keen
           interest in and{" "}
-          <b>full stack development (Java, Spring Boot, Express.js, React.js and Angular)</b>
+          <b>full stack development ( Java, Spring Boot, Express.js, React.js and Angular )</b>
           .Seeking professional experience, where I can effectively utilize my
           knowledge and skills
         </motion.p>
