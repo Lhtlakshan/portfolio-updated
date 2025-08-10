@@ -42,7 +42,7 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
       features: ["Counsellor Functionalities", "Meditation Modules"],
       demoUrl: "#",
       githubUrl: "https://github.com/orgs/sarusara-agro/repositories",
-      image: "https://i0.wp.com/asombarta.com/wp-content/uploads/2025/03/paddy-1-scaled.jpg?fit=2560%2C1707&ssl=1",
+      image: "https://www.shutterstock.com/image-photo/drone-shot-tractor-spraying-lush-600nw-2464594961.jpg",
       gradient: "from-green-500 to-teal-500",
       bgGradient: darkMode ? "from-green-900/20 to-teal-900/20" : "from-green-50 to-teal-50"
     },
