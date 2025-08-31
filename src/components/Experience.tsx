@@ -19,14 +19,13 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
   duration: "Jan 2025 - Present",
   type: "Full-time",
   achievements: [
-    "Developing internal applications, including an E-Commerce style appointments management web application.",
-    "Developing REST APIs using Spring Boot and securing them with Spring Security and JWT.",
-    "Implemented unit tests using JUnit and Mockito to ensure code reliability and support test-driven development.",
+    "Developing the backend for an appointment management system using Spring Boot under tight sprint deadlines.",
+    "Implementing secure REST APIs with Spring Security and JWT.",
+    "Achieving 75% Unit Test coverage with JUnit and Mockito, reducing defects and improving code reliability.",
     "Deploying the Spring Boot application on Google Cloud Platform (GCP).",
-    "Actively participating in daily stand-ups, sprint planning, and retrospective meetings to align with Agile practices.",
-    "Using Bitbucket for version control and Jira for project management.",
-    "Consistently applying best coding practices and software engineering principles such as OOP.",
-    "Soft skills: Team player, Adaptability, Communication, and Analytical thinking."
+    "Applying best coding practices and software engineering principles, with a strong focus on Object-Oriented Programming (OOP) with SOLID principle. ",
+    "Applying Agile principles in collaborative environments, with strong teamwork, adaptability, and communication skills",
+    "Using Bitbucket for version control and Jira for project management."
   ],
   technologies: ["Java", "Spring Boot", "Hibernate", "MySQL", "Spring Security", "JWT", "JUnit", "Mockito", "GCP"]
 }
@@ -37,14 +36,14 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
   duration: "Dec 2023 – June 2024",
   type: "Internship",
   achievements: [
-    "Fixed internal application issues and improved essential features to enhance user-friendliness, functionality, and stability.",
+    "Fixed bugs and enhanced application features using C# and C++, improving stability and user experience.",
     "Successfully implemented enhanced logging across multiple sub-projects within the internal product.",
     "Developed and updated test cases and maintained detailed test case documentation.",
-    "Conducted full system testing (manual and automated) using Zebra tools and SDKs.",
+    "Conducted manual and automated system testing using Zebra SDKs and tools.",
     "Followed best coding practices and applied Software Engineering concepts like OOP.",
     "Followed Agile development methodologies to ensure smooth project management.",
     "Actively participated in Agile practices such as daily stand-ups, sprint planning, and retrospectives.",
-    "Used Gerrit for version control and Jira for project management."
+    "Used Gerrit for version control"
   ],
   technologies: ["C#", "C++"],
   softSkills: ["Team player", "Adaptability", "Communication", "Analytical skills"]
