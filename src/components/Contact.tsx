@@ -39,7 +39,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string
       )
       .then(() => {
-        toast.success("✅ Email sent successfully!");
+        toast.success("Email sent successfully!");
         setFormData({ name: "", email: "", subject: "", message: "" });
       })
       .catch(() => {
