@@ -16,16 +16,17 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
     {
   company: "UniverSL Softwares (Pvt) Ltd",
   position: "Trainee Software Engineer",
-  duration: "Jan 2025 - Present",
+  duration: "Jan 2025 - July 2025",
   type: "Full-time",
   achievements: [
-    "Developing the backend for an appointment management system using Spring Boot under tight sprint deadlines.",
-    "Implementing secure REST APIs with Spring Security and JWT.",
-    "Achieving 75% Unit Test coverage with JUnit and Mockito, reducing defects and improving code reliability.",
-    "Deploying the Spring Boot application on Google Cloud Platform (GCP).",
-    "Applying best coding practices and software engineering principles, with a strong focus on Object-Oriented Programming (OOP) with SOLID principle. ",
-    "Applying Agile principles in collaborative environments, with strong teamwork, adaptability, and communication skills",
-    "Using Bitbucket for version control and Jira for project management."
+    "Developed the backend for an appointment management system using Java Spring Boot under tight sprint deadlines..",
+    "Implemented secure REST APIs with Spring Security and JWT.",
+    "Achieved 75% Unit Test coverage with JUnit and Mockito, reducing defects and improving code reliability.",
+    "Deployed the Spring Boot application on Google Cloud Platform (GCP).",
+    "Applied best coding practices and software engineering principles, with a strong focus on Object-Oriented Programming (OOP) with SOLID principle. ",
+    "Debugged and resolved backend issues promptly, maintaining high system stability.",
+    "Applied Agile principles in collaborative environments, with strong teamwork, adaptability, and communication skills",
+    "Collaborated with frontend developers to integrate APIs and ensure seamless application functionality."
   ],
   technologies: ["Java", "Spring Boot", "Hibernate", "MySQL", "Spring Security", "JWT", "JUnit", "Mockito", "GCP"]
 }
@@ -41,9 +42,9 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
     "Developed and updated test cases and maintained detailed test case documentation.",
     "Conducted manual and automated system testing using Zebra SDKs and tools.",
     "Followed best coding practices and applied Software Engineering concepts like OOP.",
-    "Followed Agile development methodologies to ensure smooth project management.",
+    "Collaborated with a team of 10 members to identify and resolve performance bottlenecks.",
     "Actively participated in Agile practices such as daily stand-ups, sprint planning, and retrospectives.",
-    "Used Gerrit for version control"
+    "Used Gerrit for version control, managing code updates and maintaining version history. "
   ],
   technologies: ["C#", "C++"],
   softSkills: ["Team player", "Adaptability", "Communication", "Analytical skills"]
