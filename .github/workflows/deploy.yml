@@ -1,0 +1,39 @@
+name: Deploy my portfolio app
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps: 
+      # checkout the repository
+      - name: Checkout code
+        actions: actions/checkout@v3
+
+    # set up node js
+      - name: Setup Node js
+        actions: actions/setup-node@v3
+        with:
+          node-version: 22
+
+    # install dependencies
+      - name: install dependencies
+        run: npm install
+
+    # build the project
+      - name: build the project
+        run: npm run build
+
+    # deploy to github pages
+      - name: build the project
+        actions: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+
+        
+
